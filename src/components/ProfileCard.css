@@ -1,0 +1,100 @@
+.profilecard-outer {
+  position: relative;
+  display: inline-block;
+  margin: 24px;
+  /* Ensures the yellow bg shape shows nicely */
+}
+.profilecard-bgshape {
+  position: absolute;
+  z-index: 0;
+  /* top: 10px;
+  left: 18px; */
+  width: 300px;
+  height: 460px;
+  background: #ffb400;
+  border-radius: 18px;
+  transform: rotate(-13deg);
+}
+.profilecard-main {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  width: 320px;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.profilecard-imgwrap {
+  width: 400px;
+  height: 347px;
+  overflow: hidden;
+}
+.profilecard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.profilecard-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 22px 24px 0 24px;
+  font-size: 1.15rem;
+  font-family: inherit;
+}
+.profilecard-occupation {
+  font-weight: 700;
+  color: #232323;
+}
+.profilecard-name {
+  font-weight: 700;
+  color: #232323;
+}
+.profilecard-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 24px 18px 24px;
+  font-size: 1.05rem;
+  border-top: 1px solid #eee;
+}
+.profilecard-type {
+  color: #787878;
+  font-weight: 400;
+}
+.profilecard-verified {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  color: #232323;
+}
+.profilecard-verified img{
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 500px) {
+  .profilecard-main,
+  .profilecard-bgshape {
+    width: 95vw;
+    min-width: 0;
+    max-width: 98vw;
+    height: auto;
+  }
+  .profilecard-bgshape {
+    left: 6vw;
+    top: 12px;
+    width: 90vw;
+    height: 110vw;
+    min-height: 220px;
+  }
+  .profilecard-imgwrap {
+    height: 42vw;
+    min-height: 140px;
+    max-height: 54vw;
+  }
+}

@@ -7,6 +7,8 @@ import Team from './components/Team';
 import PostingJobs from './components/PostingJobs';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import Hero1 from './components/Hero1';
+import TeamCard from './components/ProfileCard';
 
 function App() {
   return (
@@ -15,9 +17,9 @@ function App() {
       <Hero />
       <About />
       <Features />
-      <Team />
-      <PostingJobs />
       <Testimonials />
+      <Team />  
+      <PostingJobs />
       <Footer />
     </>
   );
