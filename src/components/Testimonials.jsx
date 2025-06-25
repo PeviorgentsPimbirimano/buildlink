@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TestimonialCard from "./TestimonialCard";
 import Button from "./Button";
+import '../css/Home.css'
 
 const testimonials = [
   {

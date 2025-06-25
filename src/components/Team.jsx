@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import '../css/Home.css'
 
  function Team() {
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import ProfileCard from './ProfileCard';
+import '../css/Home.css'
 
 export default function Features() {
   return (
