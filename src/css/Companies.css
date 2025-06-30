@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Company-hero{
+    background-color:white;
+}
+.Company-hero .company-hero{
+    width: 500px;
+    height: 340px;
+}
+.Company-hero .company-hero img{
+    background-size: cover;
+    background-position: center;
+    height: 33vw;
+    width: 90vw;
+    margin-left: 4vw;
+}
+
+/* --- Review images row --- */
+.review-row {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 28px;
+    margin-left: 75vw;
+    gap: 2px;
+}
+
+.review-images-left {
+    display: flex;
+    gap: -20px;
+    top: 10px;
+}
+
+.review-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-left: -16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    background: #fff;
+}
+.review-img:first-child {
+    margin-left: 0;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.review-text {
+    font-size: 1.05rem;
+    color: #7e6d4f;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.about-company-section {
+    text-align: center;
+}
+
+.about-company-section h2 {
+    font-size: 41px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: black;
+}
+
+.about-company-section p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #444;
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.our-services-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 44px 0 0 0;
+  min-height: 220px;
+}
+
+.services-text {
+  margin-left: 6vw;
+  width: 500px;
+}
+
+.services-text h2 {
+  font-size: 41px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  width: 500px;
+  color: black;
+}
+
+.services-list p {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 11px;
+  line-height: 1.5;
+}
+
+.service-highlight.contracting {
+  color: #f3b200;
+  font-weight: 600;
+}
+
+.service-highlight.remodeling {
+  color: #f7a600;
+  font-weight: 600;
+}
+
+.service-highlight.new-construction {
+  color: #e7b803;
+  font-weight: 600;
+}
+
+.services-images {
+  display: flex;
+  flex-direction: column;
+}
+.services-img-large {
+  width: 350px;
+  height: 200px;
+  border-radius: 20px;
+  top: 10px;
+  left: 10px;
+}
+.services-img-small {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  top: 120px;
+  right: 10px;
+}
+.services-img-wrapper {
+  margin-left: 10vw;
+  position: relative;
+  width: 450px;
+  height: 280px;
+  transition: all 0.5s ;
+}
+.services-img-large,
+.services-img-small {
+  position: absolute;
+  transition: 
+  all 0.5s ,
+  z-index 0s;
+  border-radius: 20px;
+}
+.services-img-wrapper.swap .services-img-large {
+  width: 200px;
+  height: 150px;
+  top: 120px;
+  left: 240px;
+}
+.services-img-wrapper.swap .services-img-small {
+  width: 350px;
+  height: 200px;
+  top: 10px;
+  left: 10px;
+}
+
+@media (max-width: 900px) {
+  .our-services-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .services-text {
+    margin-left: 3vw;
+    max-width: 100%;
+  }
+  .services-images {
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  .services-img-wrapper {
+    width: 80vw;
+    max-width: 320px;
+    height: 35vw;
+    min-height: 110px;
+  }
+  .services-img-large,
+  .services-img-small,
+  .services-img-wrapper.swap .services-img-large,
+  .services-img-wrapper.swap .services-img-small {
+    width: 60vw !important;
+    max-width: 220px !important;
+    height: 25vw !important;
+    max-height: 110px !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .services-img-small,
+  .services-img-wrapper.swap .services-img-large {
+    left: 40vw !important;
+    top: 25vw !important;
+    width: 32vw !important;
+    height: 16vw !important;
+    max-width: 100px !important;
+    max-height: 55px !important;
+  }
+}
+.company-abt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+.company-abt img{
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+.company-abt h2{
+    font-size: 41px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+}
+.company-abt p{
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 1.6;
+    color: black;
+}
+.gallery{
+  margin-top: 100px;
+}
+.gallery h2{
+    font-size: 41px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 5vw;
+}
+.gallery-img{
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+.gallery-img img{
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+}
+.company-btn{
+  margin-top: 30px;
+  margin-left: 85vw;
+}
+/* ----- Post Job Section ----- */
+.post-job-section {
+  background: #fff;
+  border-radius: 0 0 120px 0;
+  margin: 64px auto 0 auto;
+  max-width: 800px;
+  box-shadow: none;
+  padding: 32px 0 46px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-job-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.post-job-header h2 {
+  font-size: 41px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 8px;
+  width: 630px;
+}
+
+.highlight-here {
+  color: #FEB300;
+}
+
+.post-job-info {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 350;
+}
+
+.post-job-desc {
+  color: gray;
+  font-size: 16px;
+  margin-top: 1px;
+}
+
+.post-job-form {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-right: 10vw;
+}
+
+.post-job-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 500px;
+  max-width: 280px;
+}
+
+.post-job-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.post-job-field label {
+  font-size: 17px;
+  color: gray;
+  font-weight: 400;
+}
+
+.post-job-field input {
+  padding: 9px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 11px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s;
+  background: #fafafa;
+}
+
+.post-job-field input:focus {
+  border-color: #feb300;
+}
+
+.post-job-options {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  min-width: 330px;
+}
+
+.post-job-option-group {
+  margin-bottom: 6px;
+}
+
+.post-job-option-label {
+  font-weight: 400;
+  color: gray;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.post-job-chips {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.post-job-chip {
+  padding: 10px 20px;
+  background: rgba(228, 228, 227, 1);
+  border: none;
+  border-radius: 18px;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.post-job-chip.selected {
+  box-shadow: 1px 3px gray ;
+  color: rgba(196, 141, 10, 1);
+}
+
+.post-job-submit-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.post-job-submit-btn {
+  padding: 15px 0;
+  width: 340px;
+  background: #FEB300;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.18s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  letter-spacing: 1px;
+}
+
+.post-job-submit-btn:hover {
+  background: white;
+  border: 2px solid;
+  color: #f7a600;
+}
+
+@media (max-width: 850px) {
+  .post-job-section {
+    max-width: 98vw;
+    border-radius: 0 0 60px 0;
+    padding: 22px 0 36px 0;
+  }
+  .post-job-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .post-job-submit-btn {
+    width: 98vw;
+    max-width: 320px;
+    font-size: 1.15rem;
+  }
+}

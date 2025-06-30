@@ -1,18 +1,39 @@
 import React from 'react';
 import '../css/Home.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faLinkedin, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
-    <footer className="footer-main">
-      <div className="footer-content-bottom">
-        <div className="footer-columns">
-          {/* Logo Column */}
-          <div className="footer-logo-section">
-            <img src="src/assets/buildlink-logo.png" alt="Buildlink Logo" className="footer-logo-img" />
-          </div>
-          {/* Quick Links */}
+    <footer className="custom-footer">
+      <svg
+        className="footer-svg-bg"
+        viewBox="0 0 1920 70"
+        width="100%"
+        height="70"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="
+            M0,70 
+            Q250,0 700,20 
+            Q960,30 1220,20 
+            Q1670,0 1920,70
+            L1920,0 L0,0 Z"
+          fill="#010101"
+          stroke="#FEB300"
+          strokeWidth="4"
+        />
+      </svg>
+      <div className="footer-main-content">
+        <div className="footer-logo-and-email">
+          <img src="src/assets/logo.png" alt="BuildLink" className="footer-logo" />
+          <div className="footer-email">www.buildlink@gmail.com</div>
+        </div>
+        <div className="footer-links">
           <div className="footer-links-col">
-            <div className="footer-col-title">Quick Links</div>
+            <h4>Quick Links</h4>
             <ul>
               <li>Home</li>
               <li>Handyman</li>
@@ -21,18 +42,16 @@ export default function Footer() {
               <li>About Us</li>
             </ul>
           </div>
-          {/* Handyman Links */}
           <div className="footer-links-col">
-            <div className="footer-col-title">Handyman</div>
+            <h4>Handyman</h4>
             <ul>
               <li>Plumber</li>
               <li>Electrician</li>
               <li>Builder</li>
             </ul>
           </div>
-          {/* Companies Links */}
           <div className="footer-links-col">
-            <div className="footer-col-title">Companies</div>
+            <h4>Companies</h4>
             <ul>
               <li>Construction Companies</li>
               <li>Electrical Specialists</li>
@@ -41,28 +60,25 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="footer-bottom-row">
-          <div className="footer-email">www.buildlink@gmail.com</div>
-          <div className="footer-socials">
-            <a href="#" className="footer-social">
-              <img src="src/assets/linkedin-icon.png" alt="linkedin" />
-              <span>linkedin</span>
-            </a>
-            <a href="#" className="footer-social">
-              <img src="src/assets/facebook-icon.png" alt="facebook" />
-              <span>facebook</span>
-            </a>
-            <a href="#" className="footer-social">
-              <img src="src/assets/instagram-icon.png" alt="instagram" />
-              <span>instagram</span>
-            </a>
-            <a href="#" className="footer-social">
-              <img src="src/assets/twitter-icon.png" alt="twitter" />
-              <span>twitter</span>
-            </a>
+      </div>
+        <div className="footer-social">
+          <div className="footer-social-item">
+            <FontAwesomeIcon icon={faLinkedin} />
+            <span>linkedin</span>
+          </div>
+          <div className="footer-social-item">
+            <FontAwesomeIcon icon={faFacebook} />
+            <span>facebook</span>
+          </div>
+          <div className="footer-social-item">
+            <FontAwesomeIcon icon={faInstagram} />
+            <span>instagram</span>
+          </div>
+          <div className="footer-social-item">
+            <FontAwesomeIcon icon={faTwitter} />
+            <span>twitter</span>
           </div>
         </div>
-      </div>
     </footer>
   );
 }

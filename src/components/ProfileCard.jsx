@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProfileCard.css";
+import { Link } from "react-router-dom";
 
 export default function ProfileCard({ occupation, name, image, type = "Company" }) {
   return (
@@ -7,7 +8,9 @@ export default function ProfileCard({ occupation, name, image, type = "Company" 
       <div className="profilecard-bgshape"></div>
       <div className="profilecard-main">
         <div className="profilecard-imgwrap">
-          <img src={image} alt={name} className="profilecard-img" />
+          <div className="profile-overlay">
+          <Link to="/HandymanService"><img src={image} alt={name} className="profilecard-img" /></Link>
+          </div>
         </div>
         <div className="profilecard-info-row">
           <span className="profilecard-occupation">{occupation}</span>

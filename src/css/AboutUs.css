@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-us-content {
+    margin-top: 100px;
+    display: flex;
+    gap: 100px ;
+    justify-content: center;
+}
+.about-us-content img{
+    height: 300px;
+    width: 300px;
+}
+#team{
+    margin-top: 100px;
+    text-align: center;
+}
+#team h2{
+    font-size: 41px;
+    font-weight: 600;
+}
+#team p{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    width: 700px;
+    margin-left:27vw;
+}

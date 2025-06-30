@@ -47,7 +47,7 @@ body {
   text-decoration: none;
   color: black;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 16px;
   transition: color 0.2s;
 }
@@ -100,6 +100,10 @@ body {
 .custom-search-input::placeholder {
   color: grey;
   font-family: 'Poppins', sans-serif;
+}
+.nav-link.active {
+  color: #FEB300 !important;
+  font-weight: 500;
 }
 
 /* HERO SECTION */
@@ -251,6 +255,7 @@ body {
 .about .about-sect2 .Snd-pt{
   display: flex;
   gap: 30px;
+  margin-bottom: 23px;
 }
 .about .about-sect2 .Snd-pt ul li img{
   height: 20px;
@@ -284,7 +289,6 @@ body {
   text-align: center;
   font-size: 20px;
   font-weight: 300;
-  padding-bottom: 50px;
 }
 .features .container{
   display: block;
@@ -293,6 +297,7 @@ body {
   width: 820px;
 }
 .container1{
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -368,6 +373,7 @@ body {
   display: flex;
   margin-top: 100px;
   gap: 100px;
+  align-items: center;
 }
 .post .left{
   width: 50vw;
@@ -386,147 +392,160 @@ body {
 .post .left .post-btn{
   padding-top: 30px;
 }
-.post .right{
-  padding-right: 30px;
-  width: 50vw;
-}
-.post .right img{
-  height: 200px;
-  width: 200px;
-  position: relative;
-}
-.footer-main {
-  background-image: url('/src/assets/footer.png');
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  max-height: 820px;
-  position: relative;
+.posting-job-images {
   display: flex;
-  align-items: flex-end; /* Align content at the bottom */
-  justify-content: center;
+  gap: -10px;
 }
 
-.footer-content-bottom {
-  width: 100%;
-  max-width: 1250px;
-  padding: 0 32px 36px 32px; /* Padding bottom to give space from edge */
+.rotating-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50px;
+  border: 3px solid #FEB300;
+  animation: rotate360 5s linear ;
+  margin-top: 10vw;
+}
+.rotating-img1{
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50px;
+  border: 3px solid #FEB300;
+  animation: rotate360 5s linear ;
+}
+
+@keyframes rotateWithPause {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-img {
+  animation: rotateWithPause 10s linear infinite;
+  /* 10s = 5s rotate + 5s pause */
+}
+.rotating-img1 {
+  animation: rotateWithPause 10s linear infinite;
+  /* 10s = 5s rotate + 5s pause */
+}
+.custom-footer {
+  position: relative;
+  width: 100vw;
+  background: #010101;
   color: #fff;
-  font-family: 'Inter', Arial, sans-serif;
+  overflow: hidden;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.footer-svg-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 70px; /* matches the height of the SVG curve */
+  z-index: 1;
+  pointer-events: none;
+  display: block;
+}
+
+.footer-main-content {
+  position: relative;
   z-index: 2;
+  width: 100vw;
+  min-height: 220px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px 40px 30px 40px;
+  box-sizing: border-box;
+  background: #010101;
+}
+
+.footer-logo-and-email {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: flex-start;
+  min-width: 220px;
+  margin-right: 20px;
 }
 
-.footer-columns {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 44px;
-  margin-bottom: 38px;
-  width: 100%;
-}
-
-.footer-logo-section {
-  flex: 0 0 166px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-right: 30px;
-}
-.footer-logo-img {
-  width: 135px;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.footer-links-col {
-  min-width: 120px;
-}
-.footer-col-title {
-  font-size: 1.09rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #fff;
-}
-.footer-links-col ul {
-  list-style: disc inside;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-}
-.footer-links-col ul li {
-  margin-bottom: 6px;
-  color: #fff;
-  font-weight: 400;
-  opacity: 0.93;
-}
-
-.footer-bottom-row {
-  width: 100%;
-  margin-top: 42px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 1px solid rgba(255,255,255,0.13);
-  padding-top: 25px;
-  font-size: 1rem;
+.footer-logo {
+  width: 250px;
+  margin-bottom: 12px;
 }
 
 .footer-email {
   color: #fff;
-  font-size: 1.05rem;
-  opacity: 0.95;
-  letter-spacing: 0.01em;
+  font-size: 1.02rem;
+  margin-bottom: 18px;
 }
 
-.footer-socials {
+.footer-links {
   display: flex;
-  align-items: center;
-  gap: 32px;
+  gap: 250px;
+  margin-bottom: 0;
 }
+
+.footer-links-col h4 {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.footer-links-col ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 0.98rem;
+}
+
+.footer-links-col ul li {
+  margin-bottom: 5px;
+}
+
 .footer-social {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
-.footer-social img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  filter: invert(1);
+  gap: 36px;
+  justify-content: center;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .footer-content-bottom {
-    padding: 0 10px 24px 10px;
-  }
-  .footer-columns {
+.footer-social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 0.93rem;
+}
+.footer-social-item svg {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1200px) {
+  .footer-main-content {
     flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px 20px 20px;
+  }
+  .footer-links {
+    gap: 32px;
+    margin-bottom: 20px;
+  }
+  .footer-social {
     gap: 22px;
-    align-items: flex-start;
-  }
-  .footer-logo-section {
-    margin-bottom: 17px;
-    margin-right: 0;
-    justify-content: flex-start;
-  }
-  .footer-bottom-row {
-    flex-direction: column;
-    gap: 18px;
-    align-items: flex-start;
-    padding-top: 16px;
-  }
-  .footer-logo-img {
-    width: 110px;
+    margin-top: 16px;
   }
 }

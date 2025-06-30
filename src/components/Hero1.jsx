@@ -9,21 +9,58 @@ function Hero1({ Hero }) {
         <div className="hero1-overlay">
           <div className="hero1-top-box">
             <h2>
-              Get to <span className="hero1-highlight">know</span> Us
+              {Hero.h2}
             </h2>
           </div>
           <div className="hero1-content">
             <h1>
               <span className="hero1-quote-mark">“</span>
-              Your <span className="hero1-yellow">Trusted</span> Partner in <span className="hero1-yellow">Quality</span> Construction
-              <span className="hero1-quote-mark hero1-quote-close">"</span>
+              {Hero.h1}
+              <span className="hero1-quote-mark hero1-quote-close">”</span>
             </h1>
             <p>
-              "At BuildLink, we are passionate about transforming spaces and delivering quality craftsmanship. With a commitment to excellence and customer satisfaction, our journey began with a vision to provide reliable handyman services. Let us help you build your dreams!"
+              {Hero.p}
             </p>
           </div>
           <div className="hero1-scroll-down">
-            <span className="hero1-scroll-icon">&#8595;</span>
+            <svg
+              className="hero1-scroll-arrow"
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient id="circle-gradient" x1="0" y1="0" x2="0" y2="56" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#FFD600" />
+                  <stop offset="1" stopColor="#F44336" />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="28"
+                cy="28"
+                r="27"
+                stroke="url(#circle-gradient)"
+                strokeWidth="2"
+                fill="white"
+              />
+              <g>
+                <path
+                  d="M28 18V36"
+                  stroke="#111"
+                  strokeWidth="4"
+                  strokeLinecap="square"
+                />
+                <path
+                  d="M22 30L28 36L34 30"
+                  stroke="#111"
+                  strokeWidth="4"
+                  strokeLinecap="square"
+                  strokeLinejoin="bevel"
+                />
+              </g>
+            </svg>
           </div>
         </div>
       </div>

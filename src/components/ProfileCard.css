@@ -37,19 +37,31 @@
   object-fit: cover;
   display: block;
 }
+.profile-overlay:hover{
+  position: absolute;
+  inset: 0;
+  background: #ffb400;
+  z-index: 1;
+}
+.profilecard-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.9;
+}
 .profilecard-info-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 22px 24px 0 24px;
-  font-size: 1.15rem;
   font-family: inherit;
 }
 .profilecard-occupation {
   font-weight: 700;
   color: #232323;
+  font-size: 15px;
 }
 .profilecard-name {
+  font-size: 15px;
   font-weight: 700;
   color: #232323;
 }
@@ -58,10 +70,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 13px 24px 18px 24px;
-  font-size: 1.05rem;
   border-top: 1px solid #eee;
+  font-size: 16px;
 }
 .profilecard-type {
+  font-size: 16px;
   color: #787878;
   font-weight: 400;
 }

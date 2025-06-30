@@ -12,10 +12,10 @@ import '../css/Home.css'
           <Button btn={{text: "Post job"}}/>
         </div>
       </div>      
-      <div className="right">
-        <img src="src\assets\post1.png" />
-        <img src="src\assets\post2.png" />
-      </div>      
+      <div className="posting-job-images">
+        <img className="rotating-img" src="src\assets\post1.png" alt="Electrical wiring" />
+        <img className="rotating-img1" src="src\assets\post2.png" alt="Plumbing repair" />
+      </div>     
     </section>
   );
 }

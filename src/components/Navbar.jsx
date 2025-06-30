@@ -1,18 +1,48 @@
 import React from 'react';
 import "../css/Home.css"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function NavBar() {
+  const location = useLocation();
+
   return (
     <nav className='navbar'>
       <div className='logo'>
         <img src="src\assets\logo.png" />
       </div>
       <ul>
-        <li><span><Link to="/" className="nav-link">Home</Link></span></li>
-        <li><Link to="/Handyman" className="nav-link">Handyman</Link></li>
-        <li><Link to="/Companies" className="nav-link">Companies</Link></li>
-        <li><Link to="/AboutUs" className="nav-link">About Us</Link></li>
+        <li>
+          <Link
+            to="/"
+            className={`nav-link${location.pathname === "/" ? " active" : ""}`}
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/Handyman"
+            className={`nav-link${location.pathname === "/Handyman" ? " active" : ""}`}
+          >
+            Handyman
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/Companies"
+            className={`nav-link${location.pathname === "/Companies" ? " active" : ""}`}
+          >
+            Companies
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/AboutUs"
+            className={`nav-link${location.pathname === "/AboutUs" ? " active" : ""}`}
+          >
+            About Us
+          </Link>
+        </li>
       </ul>
       <div className="icon-search">
         <div className="custom-search-bar">
