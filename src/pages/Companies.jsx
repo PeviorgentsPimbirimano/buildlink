@@ -53,7 +53,7 @@ function Companies(){
                     AK Construction is a leading contracting company with over 15 years of experience
                     dedicated to delivering high-quality construction services. Our team of skilled
                     professionals specializes in residential and commercial projects, ensuring each build
-                    meets the highest standards of quality and craftsmanship.
+                    meets the highest standards of quality and craftsmanship .
                 </p>
             </div>
         </div>
