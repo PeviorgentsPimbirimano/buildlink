@@ -55,7 +55,7 @@ export default function NavBar() {
           <input className="custom-search-input" type="text" placeholder="Search.." />
         </div>
         <div className='icon'>
-          <img src="src/assets/user-icon.png" />
+          <img src="/user-icon.png" />
         </div>
       </div>     
     </nav>

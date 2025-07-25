@@ -21,7 +21,7 @@ export default function TestimonialCard({ test, animate = false, animateBar = tr
                         <div className="testimonial-meta">
                             <div className="testimonial-name">{test.name}</div>
                             <div className="testimonial-quote">
-                                <img src="src/assets/test-icon.png" alt="quote icon" />
+                                <img src="/test-icon.png" alt="quote icon" />
                             </div>
                         </div>
                         <div className="testimonial-text">
