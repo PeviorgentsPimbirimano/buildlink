@@ -6,19 +6,19 @@ import '../css/Home.css'
 const testimonials = [
   {
     name: "Anna.k",
-    img: "src/assets/test1.png",
+    img: "/test1.png",
     color: "rgba(254, 179, 0, 1)",
     text: "I couldn't be happier with the electrician I found through Buildlink Zimbabwe! They were prompt, professional, and resolved my electrical issues quickly. Highly recommend!",
   },
   {
     name: "Mary. J",
-    img: "src/assets/test2.png",
+    img: "/test2.png",
     color: "rgba(254, 179, 0, 1)",
     text: "I couldn't be happier with the electrician I found through Buildlink Zimbabwe! They were prompt, professional, and resolved my electrical issues quickly. Highly recommend!",
   },
   {
     name: "Tafadzwa. C",
-    img: "src/assets/test3.png",
+    img: "/test3.png",
     color: "rgba(254, 179, 0, 1)",
     text: "I couldn't be happier with the electrician I found through Buildlink Zimbabwe! They were prompt, professional, and resolved my electrical issues quickly. Highly recommend!",
   },

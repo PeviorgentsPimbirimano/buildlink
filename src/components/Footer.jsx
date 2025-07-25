@@ -28,7 +28,7 @@ export default function Footer() {
       </svg>
       <div className="footer-main-content">
         <div className="footer-logo-and-email">
-          <img src="src/assets/logo.png" alt="BuildLink" className="footer-logo" />
+          <img src="/logo.png" alt="BuildLink" className="footer-logo" />
           <div className="footer-email">www.buildlink@gmail.com</div>
         </div>
         <div className="footer-links">

@@ -108,7 +108,7 @@ body {
 
 /* HERO SECTION */
 .hero-section {
-  background: url('../assets/hero.jpg') no-repeat center center/cover;
+  background: url('/hero.jpg') no-repeat center center/cover;
   position: relative;
   width: 100vw;
   min-height: 550px;
@@ -201,7 +201,7 @@ body {
   margin-top: 100px;
 }
 .about .about-sect1{
-  background-image: url('/src/assets/about.png');
+  background-image: url('/about.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
