@@ -11,12 +11,12 @@ const categories = ["All", "Plumber", "Builder", "Electrician"];
 
 // Example data -- you can adjust/add images and types
 const profiles = [
-  { occupation: "Carpenter", name: "Tashley Park", image: "src/assets/services-img1.png", type: "Handyman", category: "Builder" },
-  { occupation: "Specialist", name: "Mugo Plumbers", image: "src/assets/services-img2.png", type: "Handyman", category: "Plumber" },
-  { occupation: "Contractors", name: "APK Construction", image: "src/assets/services-img3.png", type: "Company", category: "Builder" },
-  { occupation: "Specialist", name: "BG-Electricians", image: "src/assets/services-img4.png", type: "Handyman", category: "Electrician" },
-  { occupation: "Contractors", name: "Trag-Contractors", image: "src/assets/services-img5.png", type: "Company", category: "Builder" },
-  { occupation: "Builder", name: "Joseph.John", image: "src/assets/services-img6.png", type: "Handyman", category: "Builder" },
+  { occupation: "Carpenter", name: "Tashley Park", image: "/services-img1.png", type: "Handyman", category: "Builder" },
+  { occupation: "Specialist", name: "Mugo Plumbers", image: "/services-img2.png", type: "Handyman", category: "Plumber" },
+  { occupation: "Contractors", name: "APK Construction", image: "/services-img3.png", type: "Company", category: "Builder" },
+  { occupation: "Specialist", name: "BG-Electricians", image: "/services-img4.png", type: "Handyman", category: "Electrician" },
+  { occupation: "Contractors", name: "Trag-Contractors", image: "/services-img5.png", type: "Company", category: "Builder" },
+  { occupation: "Builder", name: "Joseph.John", image: "/services-img6.png", type: "Handyman", category: "Builder" },
 ];
 
     const [currentPage, setCurrentPage] = useState(0);
@@ -43,7 +43,7 @@ const profiles = [
     return(
         <>
         <NavBar />
-        <Hero1 Hero={{img: "src/assets/hero1(1).png", h1:(<>Your <span className="hero1-yellow">Solution</span> for Every <span className="hero1-yellow">Fix!</span></>), h2:(<>Handyman <span className="hero1-highlight">Services</span></>), p:"“At BuildLink, our handyman services are designed to tackle all your repair and maintenance needs. From quick fixes to complex projects, our experienced team is ready to help you with efficiency and expertise. Trust us to keep your space in top shape—contact us today!”" }}/>
+        <Hero1 Hero={{img: "/hero1(1).png", h1:(<>Your <span className="hero1-yellow">Solution</span> for Every <span className="hero1-yellow">Fix!</span></>), h2:(<>Handyman <span className="hero1-highlight">Services</span></>), p:"“At BuildLink, our handyman services are designed to tackle all your repair and maintenance needs. From quick fixes to complex projects, our experienced team is ready to help you with efficiency and expertise. Trust us to keep your space in top shape—contact us today!”" }}/>
         <div className="handyman">
             <div>
                 <h2>Find your <br />Handyman</h2>
@@ -66,35 +66,35 @@ const profiles = [
             <ProfileCard
               occupation="Carpenter"
               name="Tashley Park"
-              image="src\assets\services-img1.png"
+              image="/services-img1.png"
               type="Handyman"
             />
             <ProfileCard
               occupation="Specialist"
               name="Mugo Plumbers"
-              image="src\assets\services-img2.png"
+              image="/services-img2.png"
             />
             <ProfileCard
               occupation="Contractors"
               name="APK Construction"
-              image="src\assets\services-img3.png"
+              image="/services-img3.png"
             />
         </div>
         <div className="container1">
             <ProfileCard
               occupation="Specialist"
               name="BG-Electricians"
-              image="src\assets\services-img4.png"
+              image="/services-img4.png"
             />
             <ProfileCard
               occupation="Contractors"
               name="Trag-Contractors"
-              image="src\assets\services-img5.png"
+              image="/services-img5.png"
             />
             <ProfileCard
               occupation="Contractors"
               name="Joseph.John"
-              image="src\assets\services-img6.png"
+              image="/services-img6.png"
               type='Handyman'
             />
         </div>

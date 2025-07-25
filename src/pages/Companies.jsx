@@ -32,18 +32,18 @@ function Companies(){
         <NavBar />
         <div className="Company-hero">
             <div className="company-hero">
-                <img src="src/assets/Company-hero.png" alt="" />   
+                <img src="/Company-hero.png" alt="" />   
             </div>
             <div className="review-row">
                 <div className="review-images-left">
-                    <img src="src/assets/review1.png" className="review-img" alt="user1"/>
-                    <img src="src/assets/review2.png" className="review-img" alt="user2"/>
-                    <img src="src/assets/review3.png" className="review-img" alt="user3"/>
+                    <img src="/review1.png" className="review-img" alt="user1"/>
+                    <img src="/review2.png" className="review-img" alt="user2"/>
+                    <img src="/review3.png" className="review-img" alt="user3"/>
                 </div>
                 <div className="review-info">
                     <div className="review-text">Customer reviews</div>
                     <div className="review-stars">
-                        <img src="src\assets\stars.png" alt="" />
+                        <img src="/stars.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -77,13 +77,13 @@ function Companies(){
             </div>
             <div className={`services-img-wrapper ${swapped ? "swap" : ""}`}>
               <img
-                src="src/assets/services1.png"
+                src="/services1.png"
                 alt="Construction site"
                 className={`services-img-large ${swapped ? "swap" : ""}`}
                 style={swapped ? { zIndex: 3 } : { zIndex: 2 }}
               />
               <img
-                src="src/assets/services2.png"
+                src="/services2.png"
                 alt="Construction tools"
                 className={`services-img-small ${swapped ? "swap" : ""}`}
                 style={swapped ? { zIndex: 2 } : { zIndex: 3 }}
@@ -92,7 +92,7 @@ function Companies(){
         </section>
         <div className="company-abt">
           <div>
-            <img src="src/assets/services3.png" alt="" />
+            <img src="/services3.png" alt="" />
           </div>
           <div>
             <h2>Why Choose AK Construction?</h2>
@@ -104,9 +104,9 @@ function Companies(){
         <div className="gallery">
           <h2>Gallery</h2>
           <div className="gallery-img">
-            <img src="src/assets/gallery1.png" alt="Gallery Image 1" />
-            <img src="src/assets/gallery2.png" alt="Gallery Image 2" />
-            <img src="src/assets/gallery3.png" alt="Gallery Image 3" />
+            <img src="/gallery1.png" alt="Gallery Image 1" />
+            <img src="/gallery2.png" alt="Gallery Image 2" />
+            <img src="/gallery3.png" alt="Gallery Image 3" />
           </div>
         </div>
         <div className="company-btn">

@@ -11,16 +11,16 @@ function AboutUs(){
     return(
         <>
         <NavBar />
-        <Hero1 Hero={{img: "src/assets/hero1.png", h1:(<>Your <span className="hero1-yellow">Trusted</span> Partner in <span className="hero1-yellow">Quality</span> Construction</>), h2:(<>Get to <span className="hero1-highlight">know </span>Us</>), p:"“At BuildLink, we are passionate about transforming spaces and delivering quality craftsmanship. With a commitment to excellence and customer satisfaction, our journey began with a vision to provide reliable handyman services. Let us help you build your dreams!”" }}/>
+        <Hero1 Hero={{img: "/hero1.png", h1:(<>Your <span className="hero1-yellow">Trusted</span> Partner in <span className="hero1-yellow">Quality</span> Construction</>), h2:(<>Get to <span className="hero1-highlight">know </span>Us</>), p:"“At BuildLink, we are passionate about transforming spaces and delivering quality craftsmanship. With a commitment to excellence and customer satisfaction, our journey began with a vision to provide reliable handyman services. Let us help you build your dreams!”" }}/>
         <div className="about-us-content">
             <div className='img1'>
-                <img src="src\assets\aboutUs1.png" />                
+                <img src="/aboutUs1.png" />                
             </div>
             <div className='img2'>
-                <img src="src\assets\aboutUs2.png" />
+                <img src="/aboutUs2.png" />
             </div>
             <div className='img3'>
-                <img src="src\assets\aboutUs3.png" />
+                <img src="/aboutUs3.png" />
             </div>
         </div>
         <About />
@@ -29,14 +29,14 @@ function AboutUs(){
             <p>"Meet the BuildLink team! Our skilled professionals bring expertise and dedication to every project. Together, we ensure your vision is realized with quality and care!"</p>
         </div>
         <div className="team-container">
-            <TeamCard teamcard={{img:"src/assets/teamCard-img1.png"}}/>
-            <TeamCard teamcard={{img:"src/assets/teamCard-img2.png"}}/>
-            <TeamCard teamcard={{img:"src/assets/teamCard-img3.png"}}/>
+            <TeamCard teamcard={{img:"/teamCard-img1.png"}}/>
+            <TeamCard teamcard={{img:"/teamCard-img2.png"}}/>
+            <TeamCard teamcard={{img:"/teamCard-img3.png"}}/>
         </div>
         <div className='team-container'>
-            <TeamCard teamcard={{img:"src/assets/teamCard-img4.png"}}/>
-            <TeamCard teamcard={{img:"src/assets/teamCard-img5.png"}}/>
-            <TeamCard teamcard={{img:"src/assets/teamCard-img6.png"}}/>
+            <TeamCard teamcard={{img:"/teamCard-img4.png"}}/>
+            <TeamCard teamcard={{img:"/teamCard-img5.png"}}/>
+            <TeamCard teamcard={{img:"/teamCard-img6.png"}}/>
         </div>
         <div className='aboutUs-btn'>
             <Button btn={{text:"Get in Touch"}}/>
