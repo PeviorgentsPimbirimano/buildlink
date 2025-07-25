@@ -6,7 +6,7 @@ import '../css/Home.css'
   return (
     <section className='team'>
       <div className="left">
-        <img src="src\assets\team-img.png" alt="" />
+        <img src="/team-img.png" alt="" />
       </div>
       <div className="right">
         <h2>Meet Our Team</h2>

@@ -14,18 +14,18 @@ export default function Features() {
         <ProfileCard
           occupation="Carpenter"
           name="Tashley Park"
-          image="src\assets\services-img1.png"
+          image="/services-img1.png"
           type="Handyman"
         />
         <ProfileCard
           occupation="Specialist"
           name="Mugo Plumbers"
-          image="src\assets\services-img2.png"
+          image="/services-img2.png"
         />
         <ProfileCard
           occupation="Contractors"
           name="APK Construction"
-          image="src\assets\services-img3.png"
+          image="/services-img3.png"
         />
       </div>
       <div className="feature-btn">

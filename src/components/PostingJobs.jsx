@@ -13,8 +13,8 @@ import '../css/Home.css'
         </div>
       </div>      
       <div className="posting-job-images">
-        <img className="rotating-img" src="src\assets\post1.png" alt="Electrical wiring" />
-        <img className="rotating-img1" src="src\assets\post2.png" alt="Plumbing repair" />
+        <img className="rotating-img" src="/post1.png" alt="Electrical wiring" />
+        <img className="rotating-img1" src="/post2.png" alt="Plumbing repair" />
       </div>     
     </section>
   );

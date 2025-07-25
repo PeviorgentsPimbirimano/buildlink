@@ -19,7 +19,7 @@ export default function ProfileCard({ occupation, name, image, type = "Company" 
         <div className="profilecard-footer-row">
           <span className="profilecard-type">{type}</span>
           <span className="profilecard-verified">
-            <img src="src\assets\Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
             verified
           </span>
         </div>

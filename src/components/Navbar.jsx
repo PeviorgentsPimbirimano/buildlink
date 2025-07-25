@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <nav className='navbar'>
       <div className='logo'>
-        <img src="src\assets\logo.png" />
+        <img src="/logo.png" />
       </div>
       <ul>
         <li>
